@@ -20,7 +20,7 @@ app.use(upload());
 // Configure CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Frontend origin
+    origin: "https://poll-system-orpin.vercel.app/", // Frontend origin
     credentials: true, // Allows cookies and headers
   })
 );
@@ -31,6 +31,6 @@ app.use("/api", Routes);
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server started at http://localhost:${PORT}`);
 });
