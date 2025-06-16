@@ -20,7 +20,7 @@ app.use(upload());
 // Configure CORS
 app.use(
   cors({
-    origin: "https://poll-system-orpin.vercel.app/", // Frontend origin
+    origin: "https://poll-system-orpin.vercel.app", // Frontend origin
     credentials: true, // Allows cookies and headers
   })
 );
